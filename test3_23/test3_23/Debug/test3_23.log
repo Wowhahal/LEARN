@@ -1,0 +1,3 @@
+﻿  test3_23.c
+D:\clearn\test3_23\test3_23\test3_23.c(21,14): warning C4013: “DisplayBoard”未定义；假设外部返回 int
+  test3_23.vcxproj -> D:\clearn\test3_23\Debug\test3_23.exe
