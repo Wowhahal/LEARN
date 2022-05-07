@@ -1,0 +1,6 @@
+﻿  test4_26.c
+D:\clearn\LEARN\test4_26\test4_26\test4_26.c(56,26): warning C4047: “函数”:“const char *”与“char **”的间接级别不同
+D:\clearn\LEARN\test4_26\test4_26\test4_26.c(56,24): warning C4024: “strlen”: 形参和实参 1 的类型不同
+D:\clearn\LEARN\test4_26\test4_26\test4_26.c(57,30): warning C4047: “函数”:“const char *”与“char **”的间接级别不同
+D:\clearn\LEARN\test4_26\test4_26\test4_26.c(57,27): warning C4024: “strlen”: 形参和实参 1 的类型不同
+  test4_26.vcxproj -> D:\clearn\LEARN\test4_26\Debug\test4_26.exe
