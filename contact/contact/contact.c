@@ -111,6 +111,7 @@ void SearchContact(const struct Contact* ps)
 {
 	char name[MAX_NAME];
 	printf("请输入要查找人的信息：");
+	scanf("%s", name);
 	int pos = FindByName(ps, name);
 	if (pos == -1)
 	{
@@ -161,5 +162,18 @@ void ModifyContact(struct Contact* ps)
 
 void SortContact(struct Contact* ps)
 {
-
+	int i = 0;
+	for (i = 0; i < ps->size - 1; i++)
+	{
+		int j = 0;
+		for (j = 0; j < ps->size - 1 - i; j++)
+		{
+			if ( strcmp(ps->data[j].name, ps->data[j + 1].name)>0)
+			{
+				struct PeoInfo str = ps->data[j];
+				ps->data[j] = ps->data[j + 1];
+				ps->data[j + 1] = str;
+			}
+		}
+	}
 }
