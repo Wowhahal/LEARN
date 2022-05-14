@@ -1,11 +1,16 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
 
-#define MAX 1000
+// #define MAX 1000
+
+#define DEFAULT_SZ 3
 #define MAX_NAME 20
 #define MAX_SEX 5
 #define MAX_TELE 12
 #define MAX_ADDR 30
+
+
+#include <stdlib.h>
 
 
 enum Option
@@ -31,8 +36,9 @@ struct PeoInfo
 //通讯录类型
 struct Contact
 {
-	struct PeoInfo data[MAX];//存放一个信息
+	struct PeoInfo *data;//存放一个信息
 	int size;//记录当前已经有的元素个数
+	int capacity;//当前通讯录的最大容量
 };
 
 //声明函数
@@ -50,3 +56,5 @@ void SearchContact(const struct Contact* ps);
 void ModifyContact(struct Contact* ps);
 //排序算法
 void SortContact(struct Contact* ps);
+//释放开辟的动态内存
+void DestoryContact(struct Contact* ps);
