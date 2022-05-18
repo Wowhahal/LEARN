@@ -30,15 +30,15 @@ void CheckCapacity(struct Contact* ps);
 void LoadContact(struct Contact* ps)
 {
 	struct PeoInfo tmp = { 0 };
-	FILE* Pfread = fopen("contact.dat", "rb");
-	if (Pfread == NULL);
+	FILE* pfRead = fopen("contact.txt", "rb");
+	if (pfRead == NULL);
 	{
 		printf("LoadContact:%s\n", strerror(errno));
 		return;
 	}
 
 	//读取文件，存放到通讯录中
-	while (fread(&tmp, sizeof(struct PeoInfo), 1, Pfread))
+	while (fread(&tmp, sizeof(struct PeoInfo), 1, pfRead))
 	{
 		CheckCapacity(ps);
 		ps->data[ps->size] = tmp;
@@ -46,8 +46,8 @@ void LoadContact(struct Contact* ps)
 
 	}
 
-	fclose(Pfread);
-	Pfread = NULL;
+	fclose(pfRead);
+	pfRead = NULL;
 
 }
 
@@ -267,7 +267,7 @@ void DestoryContact(struct Contact* ps)
 
 void SaveContact(struct Contact* ps)
 {
-	FILE* pfWrite = fopen("contact.dat", "wb");
+	FILE* pfWrite = fopen("contact.txt", "wb");
 	if (pfWrite == NULL)
 	{
 		printf("SaveContact:%s\n", strerror(errno));
@@ -278,4 +278,8 @@ void SaveContact(struct Contact* ps)
 	{
 		fwrite(&(ps->data[i]), sizeof(struct PeoInfo), 1, pfWrite);
 	}
+
+	fclose(pfWrite);
+	pfWrite = NULL;
+
 }

@@ -1,0 +1,7 @@
+﻿  contact.c
+D:\clearn\LEARN\test5_9\test5_9\contact.c(3,6): error C2371: “InitContact”: 重定义；不同的基类型
+D:\clearn\LEARN\test5_9\test5_9\contact.h(31): message : 参见“InitContact”的声明
+D:\clearn\LEARN\test5_9\test5_9\contact.c(5,7): warning C4013: “meset”未定义；假设外部返回 int
+  test5_9.c
+D:\clearn\LEARN\test5_9\test5_9\test5_9.c(33,17): warning C4101: “con”: 未引用的局部变量
+  正在生成代码...
