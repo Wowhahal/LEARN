@@ -1,0 +1,10 @@
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=0
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=1
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=2
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=3
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=4
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=5
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=6
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=7
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=8
+file:D:\clearn\LEARN\test5_21\test5_21\test5_21.c line:20 date:May 21 2022 time:21:55:55 i=9
